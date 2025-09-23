@@ -9,11 +9,11 @@ Windows Form Application, bắt buộc sử dụng .NET Framework 2.0**, sử d�
 
 Web đơn giản, bắt buộc sử dụng .NET Framework 2.0, sử dụng web server là IIS, dùng file hosts để tự tạo domain, gắn domain này vào iis, file index.html có sử dụng html css js để xây dựng giao diện nhập được các input cho bài toán, dùng mã js để tiền xử lý dữ liệu, js để gửi lên backend. backend là api.aspx, trong code của api.aspx.cs thì lấy được các input mà js gửi lên, rồi sử dụng được DLL đa năng trên. kết quả gửi lại json cho client, js phía client sẽ nhận được json này hậu xử lý để thay đổi giao diện theo dữ liệu nhận dược, phải có dấu án cá nhân. keyword: c# window web => ASP.NET Web Application (.NET Framework) + tham khảo link chatgpt thầy gửi. project web này biên dịch ra DLL, phải kết hợp với IIS mới chạy được.
 
-thư viện MultiToolLib của chương trình:
+1. thư viện MultiToolLib của chương trình:
 
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/68bf4df4-4375-4233-bd30-f999e24b4dfb" />
 
-trang web HTML tĩnh dùng để tạo giao diện cho ứng dụng MultiTool Web – Văn Song Nguyễn. Nó cho phép người dùng nhập dữ liệu, chọn thao tác, và nhận kết quả xử lý từ phía server thông qua file api.aspx.
+2. trang web HTML tĩnh dùng để tạo giao diện cho ứng dụng MultiTool Web – Văn Song Nguyễn. Nó cho phép người dùng nhập dữ liệu, chọn thao tác, và nhận kết quả xử lý từ phía server thông qua file api.aspx.
 
 🧠 Chức năng của trang web này:
 🎨 Giao diện người dùng gồm:
@@ -44,6 +44,67 @@ Dùng XMLHttpRequest để tương thích với trình duyệt cũ (phù hợp .
 Dữ liệu được mã hóa bằng encodeURIComponent để tránh lỗi khi gửi tiếng Việt hoặc ký tự đặc biệt.
 
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/037f7ac0-4961-4d9a-8a18-1ef17df52bde" />
+
+3. Console ứng dụng đa năng viết bằng C#, hoàn toàn tương thích với .NET Framework 2.0. Đây là phiên bản đơn giản của MultiTool Console, cho phép người dùng thực hiện ba thao tác chính:
+
+🎯 Chức năng chính của chương trình
+1. 🔢 Giải biểu thức toán học
+Người dùng nhập biểu thức như 2+3*4.
+
+Chương trình dùng DataTable.Compute() để tính toán.
+
+Kết quả được hiển thị ngay.
+
+📌 Ví dụ:
+
+Code
+Nhập biểu thức: 2+3*4
+Kết quả: 14
+2. 🖋 Tạo chữ ký ASCII từ tên
+Người dùng nhập tên bất kỳ.
+
+Chương trình chuyển tên thành chữ in hoa và hiển thị như một chữ ký đơn giản.
+
+📌 Ví dụ:
+
+Code
+Nhập tên: Văn Song
+>> VĂN SONG
+3. 🔐 Mã hóa chuỗi bằng Base64
+Người dùng nhập chuỗi bất kỳ.
+
+Chương trình mã hóa chuỗi đó bằng chuẩn Base64.
+
+📌 Ví dụ:
+
+Code
+Nhập chuỗi cần mã: Hello
+Mã hóa (Base64):
+SGVsbG8=
+
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/be6db99b-602c-44c6-a4e8-b4de1974f0f2" />
+
+4.Đây là file Form1.Designer.cs, chứa mã do Visual Studio sinh ra để xây dựng giao diện cho cửa sổ Form1. Nó không xử lý logic, mà chỉ định vị trí, kích thước và thuộc tính của các điều khiển như:
+
+TextBox để nhập dữ liệu và khóa
+
+ComboBox để chọn thao tác
+
+Button để thực thi
+
+PictureBox để hiển thị hình ảnh chữ ký (nếu có)
+
+🧩 Các thành phần giao diện
+Điều khiển	Mục đích sử dụng
+textBoxInput	Nhập dữ liệu đầu vào
+textBoxKey	Nhập khóa dùng cho mã hóa
+comboBoxAction	Chọn thao tác: Solve, Signature, Cipher
+buttonRun	Nhấn để thực hiện thao tác đã chọn
+textBoxOutput	Hiển thị kết quả xử lý
+pictureBoxSignature	Hiển thị hình ảnh chữ ký (nếu có)
+
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/36ad2788-cbf7-4299-8190-31e618b9d9ca" />
+
 
 
 
