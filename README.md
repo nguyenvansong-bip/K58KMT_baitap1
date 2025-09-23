@@ -12,3 +12,38 @@ Web đơn giản, bắt buộc sử dụng .NET Framework 2.0, sử dụng web s
 thư viện MultiToolLib của chương trình:
 
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/68bf4df4-4375-4233-bd30-f999e24b4dfb" />
+
+trang web HTML tĩnh dùng để tạo giao diện cho ứng dụng MultiTool Web – Văn Song Nguyễn. Nó cho phép người dùng nhập dữ liệu, chọn thao tác, và nhận kết quả xử lý từ phía server thông qua file api.aspx.
+
+🧠 Chức năng của trang web này:
+🎨 Giao diện người dùng gồm:
+Ô nhập dữ liệu (txtInput)
+
+Ô nhập key (txtKey) – dùng cho mã hóa
+
+3 nút thao tác:
+
+Solve: giải biểu thức toán học
+
+Signature: tạo chữ ký ASCII
+
+Cipher: mã hóa chuỗi bằng thuật toán SongCipher
+
+🔁 Khi người dùng nhấn nút:
+Hàm callApi(action) được gọi.
+
+Dữ liệu được gửi đến api.aspx bằng phương thức POST.
+
+Kết quả trả về từ server sẽ hiển thị trong vùng <pre id="output">.
+
+🔧 Kỹ thuật sử dụng:
+Dùng JavaScript để gửi yêu cầu AJAX đến api.aspx.
+
+Dùng XMLHttpRequest để tương thích với trình duyệt cũ (phù hợp .NET Framework 2.0).
+
+Dữ liệu được mã hóa bằng encodeURIComponent để tránh lỗi khi gửi tiếng Việt hoặc ký tự đặc biệt.
+
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/037f7ac0-4961-4d9a-8a18-1ef17df52bde" />
+
+
+
