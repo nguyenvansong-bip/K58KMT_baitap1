@@ -1,0 +1,6 @@
+C:\Users\Admin\source\repos\baitap1-k58kmt\baitap_k58kmt\obj\Debug\baitap_k58kmt.csproj.AssemblyReference.cache
+C:\Users\Admin\source\repos\baitap1-k58kmt\baitap_k58kmt\obj\Debug\baitap_k58kmt.csproj.CoreCompileInputs.cache
+C:\Users\Admin\source\repos\baitap1-k58kmt\baitap_k58kmt\bin\Debug\baitap_k58kmt.dll
+C:\Users\Admin\source\repos\baitap1-k58kmt\baitap_k58kmt\bin\Debug\baitap_k58kmt.pdb
+C:\Users\Admin\source\repos\baitap1-k58kmt\baitap_k58kmt\obj\Debug\baitap_k58kmt.dll
+C:\Users\Admin\source\repos\baitap1-k58kmt\baitap_k58kmt\obj\Debug\baitap_k58kmt.pdb
