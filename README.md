@@ -53,34 +53,6 @@ Người dùng nhập biểu thức như 2+3*4.
 
 Chương trình dùng DataTable.Compute() để tính toán.
 
-Kết quả được hiển thị ngay.
-
-📌 Ví dụ:
-
-Code
-Nhập biểu thức: 2+3*4
-Kết quả: 14
-2. 🖋 Tạo chữ ký ASCII từ tên
-Người dùng nhập tên bất kỳ.
-
-Chương trình chuyển tên thành chữ in hoa và hiển thị như một chữ ký đơn giản.
-
-📌 Ví dụ:
-
-Code
-Nhập tên: Văn Song
->> VĂN SONG
-3. 🔐 Mã hóa chuỗi bằng Base64
-Người dùng nhập chuỗi bất kỳ.
-
-Chương trình mã hóa chuỗi đó bằng chuẩn Base64.
-
-📌 Ví dụ:
-
-Code
-Nhập chuỗi cần mã: Hello
-Mã hóa (Base64):
-SGVsbG8=
 
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/be6db99b-602c-44c6-a4e8-b4de1974f0f2" />
 
