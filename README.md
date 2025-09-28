@@ -43,7 +43,8 @@ Dùng XMLHttpRequest để tương thích với trình duyệt cũ (phù hợp .
 
 Dữ liệu được mã hóa bằng encodeURIComponent để tránh lỗi khi gửi tiếng Việt hoặc ký tự đặc biệt.
 
-<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/037f7ac0-4961-4d9a-8a18-1ef17df52bde" />
+<img width="1920" height="1080" alt="Ảnh chụp màn hình 2025-09-28 082821" src="https://github.com/user-attachments/assets/c71c03b0-95ec-4105-8149-fc0a200820b3" />
+
 
 3. Console ứng dụng đa năng viết bằng C#, hoàn toàn tương thích với .NET Framework 2.0. Đây là phiên bản đơn giản của MultiTool Console, cho phép người dùng thực hiện ba thao tác chính:
 
