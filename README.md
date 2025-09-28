@@ -76,7 +76,8 @@ buttonRun	Nhấn để thực hiện thao tác đã chọn
 textBoxOutput	Hiển thị kết quả xử lý
 pictureBoxSignature	Hiển thị hình ảnh chữ ký (nếu có)
 
-<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/36ad2788-cbf7-4299-8190-31e618b9d9ca" />
+<img width="1920" height="1080" alt="Ảnh chụp màn hình 2025-09-28 071243" src="https://github.com/user-attachments/assets/2c23e787-79a8-49ae-b42d-732082dfe0c9" />
+
 
 
 
