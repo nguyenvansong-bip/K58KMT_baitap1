@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Web;
 using System.Web.UI;
-using MultiToolLib;  // dùng DLL bạn đã tạo
+using MultiToolLib;  // DLL của bạn
 
 public partial class api : Page
 {
@@ -15,11 +15,17 @@ public partial class api : Page
         {
             string action = Request["action"];
             string payload = Request["payload"];
-            string key = Request["key"];https://localhost:44350/Default.aspx.cs
+            string key = Request["key"];
 
             string result = "";
+            bool success = true;
 
-            if (action == "solve")
+            if (string.IsNullOrEmpty(action))
+            {
+                success = false;
+                result = "No action specified";
+            }
+            else if (action == "solve")
             {
                 result = tool.SolveExpression(payload);
             }
@@ -33,14 +39,29 @@ public partial class api : Page
             }
             else
             {
-                result = "{ \"success\": false, \"message\": \"Unknown action\" }";
+                success = false;
+                result = "Unknown action";
             }
 
-            Response.Write(result);
+            string safeResult = JsonEscape(result);
+
+            Response.Write("{ \"success\": " + success.ToString().ToLower() +
+                           ", \"result\": \"" + safeResult + "\" }");
         }
         catch (Exception ex)
         {
-            Response.Write("{ \"success\": false, \"message\": \"Error: " + ex.Message + "\" }");
+            string safeError = JsonEscape(ex.Message);
+            Response.Write("{ \"success\": false, \"message\": \"" + safeError + "\" }");
         }
+    }
+
+    // Hàm escape JSON cho .NET 2.0
+    private string JsonEscape(string s)
+    {
+        if (s == null) return "";
+        return s.Replace("\\", "\\\\")
+                .Replace("\"", "\\\"")
+                .Replace("\r", "\\r")
+                .Replace("\n", "\\n");
     }
 }

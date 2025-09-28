@@ -8,3 +8,13 @@ C:\Users\Admin\source\repos\baitap1-k58kmt\baitap1-k58kmt\obj\Debug\baitap1-k58k
 C:\Users\Admin\source\repos\baitap1-k58kmt\baitap1-k58kmt\bin\baitap_k58kmt.dll
 C:\Users\Admin\source\repos\baitap1-k58kmt\baitap1-k58kmt\bin\baitap_k58kmt.pdb
 C:\Users\Admin\source\repos\baitap1-k58kmt\baitap1-k58kmt\obj\Debug\baitap1-.5CA2B163.Up2Date
+C:\Users\Admin\source\repos\baitap1_k58kmt\baitap1_k58kmt\bin\baitap1-k58kmt.dll.config
+C:\Users\Admin\source\repos\baitap1_k58kmt\baitap1_k58kmt\bin\baitap1-k58kmt.dll
+C:\Users\Admin\source\repos\baitap1_k58kmt\baitap1_k58kmt\bin\baitap1-k58kmt.pdb
+C:\Users\Admin\source\repos\baitap1_k58kmt\baitap1_k58kmt\bin\baitap_k58kmt.dll
+C:\Users\Admin\source\repos\baitap1_k58kmt\baitap1_k58kmt\bin\baitap_k58kmt.pdb
+C:\Users\Admin\source\repos\baitap1_k58kmt\baitap1_k58kmt\obj\Debug\baitap1-k58kmt.csproj.AssemblyReference.cache
+C:\Users\Admin\source\repos\baitap1_k58kmt\baitap1_k58kmt\obj\Debug\baitap1-k58kmt.csproj.CoreCompileInputs.cache
+C:\Users\Admin\source\repos\baitap1_k58kmt\baitap1_k58kmt\obj\Debug\baitap1-.5CA2B163.Up2Date
+C:\Users\Admin\source\repos\baitap1_k58kmt\baitap1_k58kmt\obj\Debug\baitap1-k58kmt.dll
+C:\Users\Admin\source\repos\baitap1_k58kmt\baitap1_k58kmt\obj\Debug\baitap1-k58kmt.pdb
